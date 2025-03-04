@@ -46,3 +46,26 @@ interface MockData {
   clinic: string;
   gender: string;
 }
+
+interface Personalization {
+  channel: string;
+  content: string;
+}
+
+interface ScheduleDetails {
+  type: string;
+  time: string;
+}
+
+interface CampaignDetails {
+  basicDetails: BasicDetails;
+  filters: Filter[];
+  personalization: Personalization;
+  scheduleDetails: ScheduleDetails;
+}
+
+interface BasicDetails {
+  title?: string;
+  id?: string;
+  description?: string;
+}

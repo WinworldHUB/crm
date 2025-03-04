@@ -37,7 +37,7 @@ export const MockFilters = [
   },
 ];
 
-export const AudienceList: MockData[] = [
+export const MockAudienceList: MockData[] = [
   {
     patientName: "Emmet Matessian",
     age: 104,
@@ -837,5 +837,33 @@ export const AudienceList: MockData[] = [
     practitioner: "Osbourn Pettyfar",
     clinic: "Gastroguard Digestive Health",
     gender: "Male",
+  },
+];
+
+export const MockCampaigns: CampaignDetails[] = [
+  {
+    basicDetails: {
+      title: "Kids Health Awareness",
+      description: "Awareness Program for Kids",
+      id: "1741094237502",
+    },
+    filters: [
+      {
+        category: "demographics",
+        subCategory: "ageRange",
+        filters: {
+          minAge: 0,
+          maxAge: 18,
+        },
+      },
+    ],
+    personalization: {
+      channel: "SMS",
+      content: "<p>Free Health Checkup Program for Kids</p>",
+    },
+    scheduleDetails: {
+      type: "LATER",
+      time: "2025-03-29T18:52",
+    },
   },
 ];

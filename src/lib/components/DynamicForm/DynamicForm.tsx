@@ -6,7 +6,7 @@ interface Props {
 }
 
 const DynamicForm = ({ sections, formik }: Props) => {
-// console.log("*****", formik)
+
   const renderField = (field: FormField) => {
     const fieldValue = formik.values.filters[field.name] || "";
     const fieldError = formik.errors.filters?.[field.name];
